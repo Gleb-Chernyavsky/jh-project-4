@@ -1,0 +1,30 @@
+{
+  "name": "Category",
+  "fields": [
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "goods",
+      "otherEntityRelationshipName": "category",
+      "relationshipName": "goods",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20201029003623",
+  "entityTableName": "category",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
